@@ -1,0 +1,30 @@
+:root{
+  --bg1: #ff6ec7;
+  --bg2: #4efcff;
+  --card-bg: rgba(255,255,255,0.06);
+  --glass: rgba(255,255,255,0.06);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,var(--bg1),var(--bg2));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  color:#0b0b0b;
+}
+.container{max-width:980px;margin:20px auto;padding:20px;}
+.brand{font-family:'Bangers',cursive;font-size:48px;color:#fff;text-align:center;text-shadow:0 6px 20px rgba(0,0,0,0.25)}
+.card{background:var(--card-bg);backdrop-filter: blur(6px);border-radius:16px;padding:18px;margin:18px 0;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+input{width:100%;padding:12px;border-radius:12px;border:none;outline:none;margin-top:8px}
+.btn{cursor:pointer;border:none;padding:12px 18px;border-radius:12px;font-weight:700}
+.muted{opacity:0.9;font-size:0.9rem}
+a.social{display:block;padding:14px;border-radius:999px;text-decoration:none;color:#fff;font-weight:700;margin:6px 0;box-shadow:0 8px 20px rgba(0,0,0,0.2)}
+.share-row{display:flex;gap:8px;align-items:center;margin-top:12px}
+.small{font-size:0.9rem}
+.center{text-align:center}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
